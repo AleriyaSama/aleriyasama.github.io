@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik Politikası - Ludoness - Kızma Birader</title>
+    <title>Privacy Policy - Ludoness - Kızma Birader</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
@@ -18,35 +14,40 @@
             line-height: 1.7;
         }
         header {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255,255,255,0.05);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 30px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 30px 20px 20px;
             text-align: center;
         }
-        header h1 {
-            font-size: 2rem;
-            color: #e94560;
-            margin-bottom: 6px;
-            letter-spacing: 1px;
+        header h1 { font-size: 2rem; color: #e94560; margin-bottom: 6px; letter-spacing: 1px; }
+        header .subtitle { font-size: 1.1rem; color: #a0a0b8; margin-bottom: 20px; }
+
+        /* Language switcher */
+        .lang-switcher {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            padding: 0 16px;
         }
-        header .subtitle {
-            font-size: 1.1rem;
+        .lang-btn {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
             color: #a0a0b8;
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
         }
-        .container {
-            max-width: 820px;
-            margin: 40px auto;
-            padding: 0 24px 60px;
-        }
-        .effective-date {
-            text-align: center;
-            color: #a0a0b8;
-            font-size: 0.95rem;
-            margin-bottom: 32px;
-        }
+        .lang-btn:hover { background: rgba(233,69,96,0.15); color: #fff; border-color: rgba(233,69,96,0.4); }
+        .lang-btn.active { background: rgba(233,69,96,0.2); color: #fff; border-color: #e94560; font-weight: 700; }
+
+        .container { max-width: 820px; margin: 40px auto; padding: 0 24px 60px; }
+        .effective-date { text-align: center; color: #a0a0b8; font-size: 0.95rem; margin-bottom: 32px; }
         .intro {
-            background: rgba(233, 69, 96, 0.08);
+            background: rgba(233,69,96,0.08);
             border-left: 4px solid #e94560;
             padding: 20px 24px;
             border-radius: 0 12px 12px 0;
@@ -54,267 +55,235 @@
             font-size: 1.05rem;
         }
         .section {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.07);
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.07);
             border-radius: 14px;
             padding: 28px 30px;
             margin-bottom: 22px;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        .section:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(233, 69, 96, 0.1);
-        }
-        .section h2 {
-            color: #e94560;
-            font-size: 1.25rem;
-            margin-bottom: 14px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+        .section:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(233,69,96,0.1); }
+        .section h2 { color: #e94560; font-size: 1.25rem; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
         .section h2 .num {
-            background: #e94560;
-            color: #fff;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.85rem;
-            font-weight: 700;
-            flex-shrink: 0;
+            background: #e94560; color: #fff;
+            width: 32px; height: 32px; border-radius: 50%;
+            display: inline-flex; align-items: center; justify-content: center;
+            font-size: 0.85rem; font-weight: 700; flex-shrink: 0;
         }
-        .section p {
-            color: #c0c0d0;
-            margin-bottom: 12px;
-        }
-        .section ul {
-            list-style: none;
-            padding: 0;
-        }
-        .section ul li {
-            padding: 6px 0 6px 28px;
-            position: relative;
-            color: #b0b0c4;
-        }
+        .section p { color: #c0c0d0; margin-bottom: 12px; }
+        .section ul { list-style: none; padding: 0; }
+        .section ul li { padding: 6px 0 6px 28px; position: relative; color: #b0b0c4; }
         .section ul li::before {
-            content: '';
-            position: absolute;
-            left: 8px;
-            top: 15px;
-            width: 8px;
-            height: 8px;
-            background: #e94560;
-            border-radius: 50%;
-            opacity: 0.7;
+            content: ''; position: absolute; left: 8px; top: 15px;
+            width: 8px; height: 8px; background: #e94560; border-radius: 50%; opacity: 0.7;
         }
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-            color: #6a6a80;
-            font-size: 0.9rem;
-        }
-        footer a {
-            color: #e94560;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        .contact-info span {
-            color: #c0c0d0;
-        }
-        .contact-info a {
-            color: #e94560;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        .tag {
-            display: inline-block;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-weight: 700;
-            font-size: 0.88rem;
-            letter-spacing: 0.4px;
-            margin: 0 2px;
-        }
-        .tag-red {
-            background: rgba(233, 69, 96, 0.18);
-            color: #ff6b81;
-            border: 1px solid rgba(233, 69, 96, 0.4);
-        }
-        .tag-green {
-            background: rgba(46, 213, 115, 0.15);
-            color: #2ed573;
-            border: 1px solid rgba(46, 213, 115, 0.35);
-        }
-        .tag-yellow {
-            background: rgba(255, 196, 9, 0.15);
-            color: #ffd32a;
-            border: 1px solid rgba(255, 196, 9, 0.35);
-        }
-        .tag-blue {
-            background: rgba(69, 160, 233, 0.18);
-            color: #74b9ff;
-            border: 1px solid rgba(69, 160, 233, 0.4);
-        }
+        footer { text-align: center; padding: 30px 20px; border-top: 1px solid rgba(255,255,255,0.08); color: #6a6a80; font-size: 0.9rem; }
+        footer a { color: #e94560; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        .contact-info { display: flex; flex-direction: column; gap: 8px; }
+        .contact-info span { color: #c0c0d0; }
+        .contact-info a { color: #e94560; text-decoration: none; }
+        .tag { display: inline-block; padding: 3px 10px; border-radius: 20px; font-weight: 700; font-size: 0.88rem; letter-spacing: 0.4px; margin: 0 2px; }
+        .tag-red { background: rgba(233,69,96,0.18); color: #ff6b81; border: 1px solid rgba(233,69,96,0.4); }
+        .tag-green { background: rgba(46,213,115,0.15); color: #2ed573; border: 1px solid rgba(46,213,115,0.35); }
+        .tag-yellow { background: rgba(255,196,9,0.15); color: #ffd32a; border: 1px solid rgba(255,196,9,0.35); }
+        .tag-blue { background: rgba(69,160,233,0.18); color: #74b9ff; border: 1px solid rgba(69,160,233,0.4); }
         .highlight-box {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            background: rgba(46, 213, 115, 0.07);
-            border: 1px solid rgba(46, 213, 115, 0.25);
-            border-radius: 10px;
-            padding: 14px 18px;
-            margin-top: 14px;
+            display: flex; align-items: center; gap: 14px;
+            background: rgba(46,213,115,0.07);
+            border: 1px solid rgba(46,213,115,0.25);
+            border-radius: 10px; padding: 14px 18px; margin-top: 14px;
         }
-        .highlight-box .icon {
-            font-size: 1.6rem;
-            flex-shrink: 0;
-        }
-        .highlight-box p {
-            margin: 0;
-            color: #a8f0c6;
-            font-size: 0.97rem;
-        }
-        .highlight-box.blue {
-            background: rgba(69, 160, 233, 0.07);
-            border: 1px solid rgba(69, 160, 233, 0.25);
-        }
-        .highlight-box.blue p {
-            color: #a8d8f0;
-        }
+        .highlight-box .icon { font-size: 1.6rem; flex-shrink: 0; }
+        .highlight-box p { margin: 0; color: #a8f0c6; font-size: 0.97rem; }
+        .highlight-box.blue { background: rgba(69,160,233,0.07); border: 1px solid rgba(69,160,233,0.25); }
+        .highlight-box.blue p { color: #a8d8f0; }
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
         @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.5rem;
-            }
-            .container {
-                padding: 0 16px 40px;
-            }
-            .section {
-                padding: 20px 18px;
-            }
+            header h1 { font-size: 1.5rem; }
+            .container { padding: 0 16px 40px; }
+            .section { padding: 20px 18px; }
         }
     </style>
 </head>
 <body>
 <header>
     <h1>Ludoness - Kızma Birader</h1>
-    <div class="subtitle">Gizlilik Politikası</div>
+    <div class="subtitle" id="header-subtitle">Gizlilik Politikası</div>
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLang('tr')">🇹🇷 Türkçe</button>
+        <button class="lang-btn" onclick="switchLang('en')">🇬🇧 English</button>
+        <button class="lang-btn" onclick="switchLang('de')">🇩🇪 Deutsch</button>
+        <button class="lang-btn" onclick="switchLang('ru')">🇷🇺 Русский</button>
+        <button class="lang-btn" onclick="switchLang('es')">🇪🇸 Español</button>
+        <button class="lang-btn" onclick="switchLang('ko')">🇰🇷 한국어</button>
+        <button class="lang-btn" onclick="switchLang('ja')">🇯🇵 日本語</button>
+        <button class="lang-btn" onclick="switchLang('ar')">🇸🇦 العربية</button>
+    </div>
 </header>
+
 <div class="container">
-    <div class="effective-date">
-        Yürürlük Tarihi: 26 Mart 2026, Perşembe
-    </div>
-    <div class="intro">
-        <strong>Ludoness - Kızma Birader</strong> olarak kullanıcı gizliliğine önem veriyoruz. Bu oyun, kullanıcılarından kişisel veri toplamak amacıyla tasarlanmamıştır.
+
+    <!-- ══════════════════════════════ TÜRKÇE ══════════════════════════════ -->
+    <div class="lang-content active" id="lang-tr">
+        <div class="effective-date">Yürürlük Tarihi: 26 Mart 2026, Perşembe</div>
+        <div class="intro"><strong>Ludoness - Kızma Birader</strong> olarak kullanıcı gizliliğine önem veriyoruz. Bu oyun, kullanıcılarından kişisel veri toplamak amacıyla tasarlanmamıştır.</div>
+        <div class="section"><h2><span class="num">1</span> Toplanan Veriler</h2><p>Ludoness - Kızma Birader aşağıdaki bilgileri <span class="tag tag-red">toplamaz</span> <span class="tag tag-red">saklamaz</span> veya <span class="tag tag-red">paylaşmaz</span>:</p><ul><li>Ad ve soyad</li><li>E-posta adresi</li><li>Telefon numarası</li><li>Ödeme bilgileri</li><li>Kimlik bilgileri</li><li>Konum bilgileri</li><li>Kişisel hesap bilgileri</li></ul><div class="highlight-box"><div class="icon">🚫</div><p>Uygulama içerisinde kullanıcı hesabı oluşturma sistemi <strong>bulunmamaktadır</strong>.</p></div></div>
+        <div class="section"><h2><span class="num">2</span> Oyun Kullanımı</h2><p>Ludoness - Kızma Birader, kullanıcıların oyunu cihazlarında yerel olarak oynayabilmesi için geliştirilmiştir.</p><div class="highlight-box"><div class="icon">📴</div><p>Oyun, temel işlevleri bakımından <span class="tag tag-green">offline çalışır</span>. Sıralama tablosu (leaderboard) özelliği için internet bağlantısı gerekebilir.</p></div></div>
+        <div class="section"><h2><span class="num">3</span> Google Play Games Services</h2><p>Ludoness - Kızma Birader, sıralama tablosu özelliği için <span class="tag tag-blue">Google Play Games Services</span> altyapısını kullanmaktadır.</p><ul><li>Sıralama tablosunda yalnızca oyuncunun Google Play hesabına bağlı <strong>görünen adı</strong> gösterilir.</li><li>Bu veriler geliştirici sunucularında <span class="tag tag-red">saklanmaz</span>.</li><li>Oyun skorları yalnızca Google'ın altyapısına iletilir.</li></ul><div class="highlight-box blue"><div class="icon">ℹ️</div><p>Google'ın gizlilik politikası: <a href="https://policies.google.com/privacy" target="_blank" style="color:#74b9ff;">policies.google.com/privacy</a></p></div></div>
+        <div class="section"><h2><span class="num">4</span> Reklam ve Üçüncü Taraf Hizmetleri</h2><div class="highlight-box"><div class="icon">🚫</div><p>Ludoness - Kızma Birader içerisinde <span class="tag tag-red">reklam gösterimi bulunmamaktadır</span> ve reklam hizmetleri <span class="tag tag-red">kullanılmaz</span>.</p></div></div>
+        <div class="section"><h2><span class="num">5</span> Cihaz Gereksinimi</h2><p>Oyunun çalıştırılabilmesi için Android sürümüne sahip bir cihaz gereklidir.</p></div>
+        <div class="section"><h2><span class="num">6</span> Veri Paylaşımı</h2><div class="highlight-box"><div class="icon">🔒</div><p>Ludoness - Kızma Birader kişisel veri <span class="tag tag-red">toplamadığı</span> için üçüncü taraflarla veri paylaşımı <span class="tag tag-red">yapmaz</span>. Google Play Games aracılığıyla iletilen veriler yalnızca Google'ın sorumluluğundadır.</p></div></div>
+        <div class="section"><h2><span class="num">7</span> Çocukların Gizliliği</h2><div class="highlight-box"><div class="icon">👶</div><p>Uygulama kullanıcılardan kişisel veri <span class="tag tag-red">toplamadığı</span> için çocuklardan da ayrıca veri <span class="tag tag-red">toplanmaz</span>.</p></div></div>
+        <div class="section"><h2><span class="num">8</span> Güvenlik</h2><p>Uygulama, kullanıcıdan kişisel bilgi <span class="tag tag-yellow">talep etmeden</span> çalışacak şekilde tasarlanmıştır.</p><div class="highlight-box"><div class="icon">✅</div><p>Kullanıcı verilerinin <span class="tag tag-red">işlenmesi</span> veya <span class="tag tag-red">saklanması</span> söz konusu değildir.</p></div></div>
+        <div class="section"><h2><span class="num">9</span> Politika Değişiklikleri</h2><p>Bu gizlilik politikası gerektiğinde güncellenebilir. Güncellenen sürüm bu sayfada yayımlandığı tarihten itibaren geçerli olur.</p></div>
+        <div class="section"><h2><span class="num">10</span> İletişim</h2><div class="contact-info"><span>E-posta: <a href="mailto:aleriyasamayt@gmail.com">aleriyasamayt@gmail.com</a></span><span>Geliştirici: AleriyaSama</span></div></div>
     </div>
 
-    <div class="section">
-        <h2><span class="num">1</span> Toplanan Veriler</h2>
-        <p>Ludoness - Kızma Birader aşağıdaki bilgileri <span class="tag tag-red">toplamaz</span> <span class="tag tag-red">saklamaz</span> veya <span class="tag tag-red">paylaşmaz</span>:</p>
-        <ul>
-            <li>Ad ve soyad</li>
-            <li>E-posta adresi</li>
-            <li>Telefon numarası</li>
-            <li>Ödeme bilgileri</li>
-            <li>Kimlik bilgileri</li>
-            <li>Konum bilgileri</li>
-            <li>Kişisel hesap bilgileri</li>
-        </ul>
-        <div class="highlight-box">
-            <div class="icon">🚫</div>
-            <p>Uygulama içerisinde kullanıcı hesabı oluşturma sistemi <strong>bulunmamaktadır</strong>.</p>
-        </div>
+    <!-- ══════════════════════════════ ENGLISH ══════════════════════════════ -->
+    <div class="lang-content" id="lang-en">
+        <div class="effective-date">Effective Date: March 26, 2026</div>
+        <div class="intro"><strong>Ludoness - Kızma Birader</strong> values your privacy. This game was not designed to collect personal data from its users.</div>
+        <div class="section"><h2><span class="num">1</span> Data Collection</h2><p>Ludoness - Kızma Birader does <span class="tag tag-red">not collect</span>, <span class="tag tag-red">store</span>, or <span class="tag tag-red">share</span> the following:</p><ul><li>Full name</li><li>Email address</li><li>Phone number</li><li>Payment information</li><li>Identity documents</li><li>Location data</li><li>Personal account information</li></ul><div class="highlight-box"><div class="icon">🚫</div><p>There is <strong>no user account system</strong> within the application.</p></div></div>
+        <div class="section"><h2><span class="num">2</span> Game Usage</h2><p>Ludoness - Kızma Birader is designed for users to play locally on their devices.</p><div class="highlight-box"><div class="icon">📴</div><p>The game <span class="tag tag-green">works offline</span> for its core functions. An internet connection may be required for the leaderboard feature.</p></div></div>
+        <div class="section"><h2><span class="num">3</span> Google Play Games Services</h2><p>Ludoness - Kızma Birader uses <span class="tag tag-blue">Google Play Games Services</span> for its leaderboard feature.</p><ul><li>Only the player's Google Play <strong>display name</strong> (nickname) is shown on the leaderboard.</li><li>This data is <span class="tag tag-red">not stored</span> on developer servers.</li><li>Game scores are only transmitted to Google's infrastructure.</li></ul><div class="highlight-box blue"><div class="icon">ℹ️</div><p>Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" style="color:#74b9ff;">policies.google.com/privacy</a></p></div></div>
+        <div class="section"><h2><span class="num">4</span> Advertising & Third-Party Services</h2><div class="highlight-box"><div class="icon">🚫</div><p>Ludoness - Kızma Birader contains <span class="tag tag-red">no advertisements</span> and does <span class="tag tag-red">not use</span> advertising services.</p></div></div>
+        <div class="section"><h2><span class="num">5</span> Device Requirements</h2><p>An Android device is required to run the game.</p></div>
+        <div class="section"><h2><span class="num">6</span> Data Sharing</h2><div class="highlight-box"><div class="icon">🔒</div><p>Since Ludoness does <span class="tag tag-red">not collect</span> personal data, it does <span class="tag tag-red">not share</span> data with third parties. Data transmitted via Google Play Games is solely Google's responsibility.</p></div></div>
+        <div class="section"><h2><span class="num">7</span> Children's Privacy</h2><div class="highlight-box"><div class="icon">👶</div><p>Since the app does <span class="tag tag-red">not collect</span> personal data from anyone, it also does <span class="tag tag-red">not collect</span> data from children.</p></div></div>
+        <div class="section"><h2><span class="num">8</span> Security</h2><p>The application is designed to operate <span class="tag tag-yellow">without requesting</span> any personal information.</p><div class="highlight-box"><div class="icon">✅</div><p>User data is neither <span class="tag tag-red">processed</span> nor <span class="tag tag-red">stored</span>.</p></div></div>
+        <div class="section"><h2><span class="num">9</span> Policy Changes</h2><p>This privacy policy may be updated when necessary. The updated version will be effective from the date it is published on this page.</p></div>
+        <div class="section"><h2><span class="num">10</span> Contact</h2><div class="contact-info"><span>Email: <a href="mailto:aleriyasamayt@gmail.com">aleriyasamayt@gmail.com</a></span><span>Developer: AleriyaSama</span></div></div>
     </div>
 
-    <div class="section">
-        <h2><span class="num">2</span> Oyun Kullanımı</h2>
-        <p>Ludoness - Kızma Birader, kullanıcıların oyunu cihazlarında yerel olarak oynayabilmesi için geliştirilmiştir.</p>
-        <div class="highlight-box">
-            <div class="icon">📴</div>
-            <p>Oyun, temel işlevleri bakımından <span class="tag tag-green">offline çalışır</span>. Sıralama tablosu (leaderboard) özelliği için internet bağlantısı gerekebilir.</p>
-        </div>
+    <!-- ══════════════════════════════ DEUTSCH ══════════════════════════════ -->
+    <div class="lang-content" id="lang-de">
+        <div class="effective-date">Datum des Inkrafttretens: 26. März 2026</div>
+        <div class="intro"><strong>Ludoness - Kızma Birader</strong> legt großen Wert auf Ihre Privatsphäre. Dieses Spiel wurde nicht entwickelt, um persönliche Daten von Nutzern zu sammeln.</div>
+        <div class="section"><h2><span class="num">1</span> Datenerhebung</h2><p>Ludoness - Kızma Birader <span class="tag tag-red">erhebt</span>, <span class="tag tag-red">speichert</span> oder <span class="tag tag-red">teilt</span> folgende Informationen nicht:</p><ul><li>Vor- und Nachname</li><li>E-Mail-Adresse</li><li>Telefonnummer</li><li>Zahlungsinformationen</li><li>Ausweisdokumente</li><li>Standortdaten</li><li>Persönliche Kontoinformationen</li></ul><div class="highlight-box"><div class="icon">🚫</div><p>Es gibt <strong>kein Benutzerkonten-System</strong> in der Anwendung.</p></div></div>
+        <div class="section"><h2><span class="num">2</span> Spielnutzung</h2><p>Ludoness - Kızma Birader wurde entwickelt, damit Benutzer das Spiel lokal auf ihren Geräten spielen können.</p><div class="highlight-box"><div class="icon">📴</div><p>Das Spiel <span class="tag tag-green">funktioniert offline</span> für seine Kernfunktionen. Für die Bestenliste kann eine Internetverbindung erforderlich sein.</p></div></div>
+        <div class="section"><h2><span class="num">3</span> Google Play Games Services</h2><p>Ludoness verwendet <span class="tag tag-blue">Google Play Games Services</span> für die Bestenliste.</p><ul><li>In der Bestenliste wird nur der Google Play <strong>Anzeigename</strong> des Spielers angezeigt.</li><li>Diese Daten werden <span class="tag tag-red">nicht</span> auf Entwicklerservern <span class="tag tag-red">gespeichert</span>.</li><li>Spielergebnisse werden nur an die Google-Infrastruktur übermittelt.</li></ul><div class="highlight-box blue"><div class="icon">ℹ️</div><p>Googles Datenschutzrichtlinie: <a href="https://policies.google.com/privacy" target="_blank" style="color:#74b9ff;">policies.google.com/privacy</a></p></div></div>
+        <div class="section"><h2><span class="num">4</span> Werbung & Drittanbieter</h2><div class="highlight-box"><div class="icon">🚫</div><p>Ludoness enthält <span class="tag tag-red">keine Werbung</span> und verwendet <span class="tag tag-red">keine</span> Werbedienste.</p></div></div>
+        <div class="section"><h2><span class="num">5</span> Geräteanforderungen</h2><p>Zum Ausführen des Spiels ist ein Android-Gerät erforderlich.</p></div>
+        <div class="section"><h2><span class="num">6</span> Datenweitergabe</h2><div class="highlight-box"><div class="icon">🔒</div><p>Da Ludoness keine personenbezogenen Daten <span class="tag tag-red">erhebt</span>, werden auch keine Daten an Dritte <span class="tag tag-red">weitergegeben</span>. Über Google Play Games übermittelte Daten liegen in Googles Verantwortung.</p></div></div>
+        <div class="section"><h2><span class="num">7</span> Datenschutz für Kinder</h2><div class="highlight-box"><div class="icon">👶</div><p>Da die App keine personenbezogenen Daten <span class="tag tag-red">erhebt</span>, werden auch von Kindern keine Daten <span class="tag tag-red">gesammelt</span>.</p></div></div>
+        <div class="section"><h2><span class="num">8</span> Sicherheit</h2><p>Die Anwendung ist so konzipiert, dass sie <span class="tag tag-yellow">ohne persönliche Informationen</span> funktioniert.</p><div class="highlight-box"><div class="icon">✅</div><p>Benutzerdaten werden weder <span class="tag tag-red">verarbeitet</span> noch <span class="tag tag-red">gespeichert</span>.</p></div></div>
+        <div class="section"><h2><span class="num">9</span> Änderungen der Richtlinie</h2><p>Diese Datenschutzrichtlinie kann bei Bedarf aktualisiert werden. Die aktualisierte Version gilt ab dem Datum der Veröffentlichung auf dieser Seite.</p></div>
+        <div class="section"><h2><span class="num">10</span> Kontakt</h2><div class="contact-info"><span>E-Mail: <a href="mailto:aleriyasamayt@gmail.com">aleriyasamayt@gmail.com</a></span><span>Entwickler: AleriyaSama</span></div></div>
     </div>
 
-    <div class="section">
-        <h2><span class="num">3</span> Google Play Games Services</h2>
-        <p>Ludoness - Kızma Birader, sıralama tablosu (leaderboard) özelliği için <span class="tag tag-blue">Google Play Games Services</span> altyapısını kullanmaktadır.</p>
-        <ul>
-            <li>Sıralama tablosunda yalnızca oyuncunun Google Play hesabına bağlı <strong>görünen adı</strong> (nickname) gösterilir.</li>
-            <li>Bu görünen ad, kullanıcı tarafından Google Play üzerinden belirlenmiştir ve geliştiriciye ait sunucularda <span class="tag tag-red">saklanmaz</span>.</li>
-            <li>Oyun skorları yalnızca Google'ın altyapısına iletilir; geliştirici bu verilere erişemez, işleyemez veya saklayamaz.</li>
-        </ul>
-        <div class="highlight-box blue">
-            <div class="icon">ℹ️</div>
-            <p>Google Play Games Services kullanımına ilişkin gizlilik bilgileri için Google'ın gizlilik politikasını inceleyebilirsiniz: <a href="https://policies.google.com/privacy" target="_blank" style="color:#74b9ff;">policies.google.com/privacy</a></p>
-        </div>
+    <!-- ══════════════════════════════ РУССКИЙ ══════════════════════════════ -->
+    <div class="lang-content" id="lang-ru">
+        <div class="effective-date">Дата вступления в силу: 26 марта 2026 г.</div>
+        <div class="intro"><strong>Ludoness - Kızma Birader</strong> уважает вашу конфиденциальность. Эта игра не предназначена для сбора персональных данных пользователей.</div>
+        <div class="section"><h2><span class="num">1</span> Сбор данных</h2><p>Ludoness - Kızma Birader <span class="tag tag-red">не собирает</span>, <span class="tag tag-red">не хранит</span> и <span class="tag tag-red">не передаёт</span> следующую информацию:</p><ul><li>Имя и фамилия</li><li>Адрес электронной почты</li><li>Номер телефона</li><li>Платёжная информация</li><li>Удостоверение личности</li><li>Данные о местоположении</li><li>Данные личного аккаунта</li></ul><div class="highlight-box"><div class="icon">🚫</div><p>В приложении <strong>нет системы учётных записей</strong> пользователей.</p></div></div>
+        <div class="section"><h2><span class="num">2</span> Использование игры</h2><p>Ludoness разработана для локальной игры на устройстве пользователя.</p><div class="highlight-box"><div class="icon">📴</div><p>Игра <span class="tag tag-green">работает офлайн</span> в основных функциях. Для таблицы лидеров может потребоваться интернет.</p></div></div>
+        <div class="section"><h2><span class="num">3</span> Google Play Games Services</h2><p>Ludoness использует <span class="tag tag-blue">Google Play Games Services</span> для таблицы лидеров.</p><ul><li>В таблице лидеров отображается только <strong>отображаемое имя</strong> игрока в Google Play.</li><li>Эти данные <span class="tag tag-red">не хранятся</span> на серверах разработчика.</li><li>Игровые очки передаются только в инфраструктуру Google.</li></ul><div class="highlight-box blue"><div class="icon">ℹ️</div><p>Политика конфиденциальности Google: <a href="https://policies.google.com/privacy" target="_blank" style="color:#74b9ff;">policies.google.com/privacy</a></p></div></div>
+        <div class="section"><h2><span class="num">4</span> Реклама и сторонние сервисы</h2><div class="highlight-box"><div class="icon">🚫</div><p>В Ludoness <span class="tag tag-red">нет рекламы</span> и рекламные сервисы <span class="tag tag-red">не используются</span>.</p></div></div>
+        <div class="section"><h2><span class="num">5</span> Требования к устройству</h2><p>Для запуска игры необходимо Android-устройство.</p></div>
+        <div class="section"><h2><span class="num">6</span> Передача данных</h2><div class="highlight-box"><div class="icon">🔒</div><p>Поскольку Ludoness не <span class="tag tag-red">собирает</span> персональные данные, они не <span class="tag tag-red">передаются</span> третьим сторонам. Данные через Google Play Games находятся под ответственностью Google.</p></div></div>
+        <div class="section"><h2><span class="num">7</span> Конфиденциальность детей</h2><div class="highlight-box"><div class="icon">👶</div><p>Поскольку приложение не <span class="tag tag-red">собирает</span> персональные данные, данные детей также не <span class="tag tag-red">собираются</span>.</p></div></div>
+        <div class="section"><h2><span class="num">8</span> Безопасность</h2><p>Приложение работает <span class="tag tag-yellow">без запроса</span> личной информации.</p><div class="highlight-box"><div class="icon">✅</div><p>Данные пользователей не <span class="tag tag-red">обрабатываются</span> и не <span class="tag tag-red">хранятся</span>.</p></div></div>
+        <div class="section"><h2><span class="num">9</span> Изменения политики</h2><p>Данная политика конфиденциальности может обновляться. Обновлённая версия вступает в силу с даты публикации.</p></div>
+        <div class="section"><h2><span class="num">10</span> Контакты</h2><div class="contact-info"><span>Email: <a href="mailto:aleriyasamayt@gmail.com">aleriyasamayt@gmail.com</a></span><span>Разработчик: AleriyaSama</span></div></div>
     </div>
 
-    <div class="section">
-        <h2><span class="num">4</span> Reklam ve Diğer Üçüncü Taraf Hizmetleri</h2>
-        <div class="highlight-box">
-            <div class="icon">🚫</div>
-            <p>Ludoness - Kızma Birader içerisinde <span class="tag tag-red">reklam gösterimi bulunmamaktadır</span>. Uygulama, kullanıcıların kişisel verilerini toplamak veya işlemek amacıyla reklam hizmetleri <span class="tag tag-red">kullanmaz</span>.</p>
-        </div>
+    <!-- ══════════════════════════════ ESPAÑOL ══════════════════════════════ -->
+    <div class="lang-content" id="lang-es">
+        <div class="effective-date">Fecha de vigencia: 26 de marzo de 2026</div>
+        <div class="intro"><strong>Ludoness - Kızma Birader</strong> valora su privacidad. Este juego no fue diseñado para recopilar datos personales de sus usuarios.</div>
+        <div class="section"><h2><span class="num">1</span> Recopilación de datos</h2><p>Ludoness - Kızma Birader <span class="tag tag-red">no recopila</span>, <span class="tag tag-red">almacena</span> ni <span class="tag tag-red">comparte</span> lo siguiente:</p><ul><li>Nombre y apellidos</li><li>Correo electrónico</li><li>Número de teléfono</li><li>Información de pago</li><li>Documentos de identidad</li><li>Datos de ubicación</li><li>Información de cuenta personal</li></ul><div class="highlight-box"><div class="icon">🚫</div><p><strong>No existe sistema de cuentas de usuario</strong> en la aplicación.</p></div></div>
+        <div class="section"><h2><span class="num">2</span> Uso del juego</h2><p>Ludoness está desarrollado para que los usuarios jueguen localmente en sus dispositivos.</p><div class="highlight-box"><div class="icon">📴</div><p>El juego <span class="tag tag-green">funciona sin conexión</span> en sus funciones principales. La tabla de clasificación puede requerir internet.</p></div></div>
+        <div class="section"><h2><span class="num">3</span> Google Play Games Services</h2><p>Ludoness utiliza <span class="tag tag-blue">Google Play Games Services</span> para la tabla de clasificación.</p><ul><li>Solo se muestra el <strong>nombre visible</strong> del jugador en Google Play.</li><li>Estos datos <span class="tag tag-red">no se almacenan</span> en servidores del desarrollador.</li><li>Las puntuaciones solo se envían a la infraestructura de Google.</li></ul><div class="highlight-box blue"><div class="icon">ℹ️</div><p>Política de privacidad de Google: <a href="https://policies.google.com/privacy" target="_blank" style="color:#74b9ff;">policies.google.com/privacy</a></p></div></div>
+        <div class="section"><h2><span class="num">4</span> Publicidad y terceros</h2><div class="highlight-box"><div class="icon">🚫</div><p>Ludoness <span class="tag tag-red">no contiene publicidad</span> y <span class="tag tag-red">no utiliza</span> servicios publicitarios.</p></div></div>
+        <div class="section"><h2><span class="num">5</span> Requisitos del dispositivo</h2><p>Se requiere un dispositivo Android para ejecutar el juego.</p></div>
+        <div class="section"><h2><span class="num">6</span> Compartir datos</h2><div class="highlight-box"><div class="icon">🔒</div><p>Como Ludoness no <span class="tag tag-red">recopila</span> datos personales, tampoco los <span class="tag tag-red">comparte</span> con terceros. Los datos transmitidos a través de Google Play Games son responsabilidad de Google.</p></div></div>
+        <div class="section"><h2><span class="num">7</span> Privacidad de menores</h2><div class="highlight-box"><div class="icon">👶</div><p>Como la aplicación no <span class="tag tag-red">recopila</span> datos personales, tampoco <span class="tag tag-red">recopila</span> datos de menores.</p></div></div>
+        <div class="section"><h2><span class="num">8</span> Seguridad</h2><p>La aplicación está diseñada para funcionar <span class="tag tag-yellow">sin solicitar</span> información personal.</p><div class="highlight-box"><div class="icon">✅</div><p>Los datos del usuario no se <span class="tag tag-red">procesan</span> ni se <span class="tag tag-red">almacenan</span>.</p></div></div>
+        <div class="section"><h2><span class="num">9</span> Cambios en la política</h2><p>Esta política de privacidad puede actualizarse cuando sea necesario. La versión actualizada será efectiva desde su fecha de publicación.</p></div>
+        <div class="section"><h2><span class="num">10</span> Contacto</h2><div class="contact-info"><span>Correo: <a href="mailto:aleriyasamayt@gmail.com">aleriyasamayt@gmail.com</a></span><span>Desarrollador: AleriyaSama</span></div></div>
     </div>
 
-    <div class="section">
-        <h2><span class="num">5</span> Cihaz Gereksinimi</h2>
-        <p>Oyunun çalıştırılabilmesi için bir Android sürümüne sahip cihaz veya uyumlu bir Android emülatörü gereklidir. Bu gereksinim yalnızca oyunun teknik olarak çalıştırılabilmesi içindir.</p>
+    <!-- ══════════════════════════════ 한국어 ══════════════════════════════ -->
+    <div class="lang-content" id="lang-ko">
+        <div class="effective-date">시행일: 2026년 3월 26일</div>
+        <div class="intro"><strong>Ludoness - Kızma Birader</strong>는 사용자의 개인정보를 소중히 여깁니다. 이 게임은 사용자로부터 개인 데이터를 수집하도록 설계되지 않았습니다.</div>
+        <div class="section"><h2><span class="num">1</span> 데이터 수집</h2><p>Ludoness는 다음 정보를 <span class="tag tag-red">수집</span>, <span class="tag tag-red">저장</span> 또는 <span class="tag tag-red">공유하지 않습니다</span>:</p><ul><li>이름 및 성</li><li>이메일 주소</li><li>전화번호</li><li>결제 정보</li><li>신분증 정보</li><li>위치 데이터</li><li>개인 계정 정보</li></ul><div class="highlight-box"><div class="icon">🚫</div><p>앱 내에 <strong>사용자 계정 시스템이 없습니다</strong>.</p></div></div>
+        <div class="section"><h2><span class="num">2</span> 게임 사용</h2><p>Ludoness는 사용자가 기기에서 로컬로 플레이할 수 있도록 개발되었습니다.</p><div class="highlight-box"><div class="icon">📴</div><p>게임의 핵심 기능은 <span class="tag tag-green">오프라인으로 작동합니다</span>. 리더보드 기능에는 인터넷 연결이 필요할 수 있습니다.</p></div></div>
+        <div class="section"><h2><span class="num">3</span> Google Play 게임 서비스</h2><p>Ludoness는 리더보드 기능을 위해 <span class="tag tag-blue">Google Play 게임 서비스</span>를 사용합니다.</p><ul><li>리더보드에는 Google Play 계정의 <strong>표시 이름(닉네임)</strong>만 표시됩니다.</li><li>이 데이터는 개발자 서버에 <span class="tag tag-red">저장되지 않습니다</span>.</li><li>게임 점수는 Google의 인프라에만 전송됩니다.</li></ul><div class="highlight-box blue"><div class="icon">ℹ️</div><p>Google 개인정보처리방침: <a href="https://policies.google.com/privacy" target="_blank" style="color:#74b9ff;">policies.google.com/privacy</a></p></div></div>
+        <div class="section"><h2><span class="num">4</span> 광고 및 제3자 서비스</h2><div class="highlight-box"><div class="icon">🚫</div><p>Ludoness에는 <span class="tag tag-red">광고가 없으며</span> 광고 서비스를 <span class="tag tag-red">사용하지 않습니다</span>.</p></div></div>
+        <div class="section"><h2><span class="num">5</span> 기기 요구 사항</h2><p>게임 실행에는 Android 기기가 필요합니다.</p></div>
+        <div class="section"><h2><span class="num">6</span> 데이터 공유</h2><div class="highlight-box"><div class="icon">🔒</div><p>Ludoness는 개인 데이터를 <span class="tag tag-red">수집하지 않으므로</span> 제3자와 데이터를 <span class="tag tag-red">공유하지 않습니다</span>. Google Play 게임을 통해 전송된 데이터는 Google의 책임입니다.</p></div></div>
+        <div class="section"><h2><span class="num">7</span> 아동 개인정보 보호</h2><div class="highlight-box"><div class="icon">👶</div><p>앱이 개인 데이터를 <span class="tag tag-red">수집하지 않으므로</span> 아동의 데이터도 <span class="tag tag-red">수집하지 않습니다</span>.</p></div></div>
+        <div class="section"><h2><span class="num">8</span> 보안</h2><p>앱은 개인 정보 <span class="tag tag-yellow">요청 없이</span> 작동하도록 설계되었습니다.</p><div class="highlight-box"><div class="icon">✅</div><p>사용자 데이터는 <span class="tag tag-red">처리</span>되거나 <span class="tag tag-red">저장</span>되지 않습니다.</p></div></div>
+        <div class="section"><h2><span class="num">9</span> 정책 변경</h2><p>이 개인정보 처리방침은 필요에 따라 업데이트될 수 있습니다. 업데이트된 버전은 이 페이지에 게시된 날짜부터 유효합니다.</p></div>
+        <div class="section"><h2><span class="num">10</span> 문의</h2><div class="contact-info"><span>이메일: <a href="mailto:aleriyasamayt@gmail.com">aleriyasamayt@gmail.com</a></span><span>개발자: AleriyaSama</span></div></div>
     </div>
 
-    <div class="section">
-        <h2><span class="num">6</span> Veri Paylaşımı</h2>
-        <div class="highlight-box">
-            <div class="icon">🔒</div>
-            <p>Ludoness - Kızma Birader, kullanıcıya ait herhangi bir kişisel veriyi <span class="tag tag-red">toplamadığı</span> için üçüncü taraflarla veri paylaşımı <span class="tag tag-red">yapmaz</span>. Google Play Games Services aracılığıyla iletilen veriler yalnızca Google'ın sorumluluğu altındadır.</p>
-        </div>
+    <!-- ══════════════════════════════ 日本語 ══════════════════════════════ -->
+    <div class="lang-content" id="lang-ja">
+        <div class="effective-date">施行日：2026年3月26日</div>
+        <div class="intro"><strong>Ludoness - Kızma Birader</strong>はユーザーのプライバシーを尊重します。このゲームはユーザーから個人データを収集する目的で設計されていません。</div>
+        <div class="section"><h2><span class="num">1</span> データの収集</h2><p>Ludonessは以下の情報を<span class="tag tag-red">収集</span>、<span class="tag tag-red">保存</span>、または<span class="tag tag-red">共有しません</span>：</p><ul><li>氏名</li><li>メールアドレス</li><li>電話番号</li><li>支払い情報</li><li>身分証明書情報</li><li>位置情報</li><li>個人アカウント情報</li></ul><div class="highlight-box"><div class="icon">🚫</div><p>アプリ内に<strong>ユーザーアカウントシステムはありません</strong>。</p></div></div>
+        <div class="section"><h2><span class="num">2</span> ゲームの利用</h2><p>Ludonessはユーザーがデバイス上でローカルにプレイできるよう開発されています。</p><div class="highlight-box"><div class="icon">📴</div><p>ゲームの主要機能は<span class="tag tag-green">オフラインで動作します</span>。リーダーボード機能にはインターネット接続が必要な場合があります。</p></div></div>
+        <div class="section"><h2><span class="num">3</span> Google Play ゲームサービス</h2><p>Ludonessはリーダーボード機能に<span class="tag tag-blue">Google Play ゲームサービス</span>を使用しています。</p><ul><li>リーダーボードにはGoogle Playアカウントの<strong>表示名（ニックネーム）</strong>のみ表示されます。</li><li>このデータは開発者サーバーに<span class="tag tag-red">保存されません</span>。</li><li>ゲームスコアはGoogleのインフラにのみ送信されます。</li></ul><div class="highlight-box blue"><div class="icon">ℹ️</div><p>Googleのプライバシーポリシー: <a href="https://policies.google.com/privacy" target="_blank" style="color:#74b9ff;">policies.google.com/privacy</a></p></div></div>
+        <div class="section"><h2><span class="num">4</span> 広告・第三者サービス</h2><div class="highlight-box"><div class="icon">🚫</div><p>Ludonessには<span class="tag tag-red">広告はなく</span>、広告サービスも<span class="tag tag-red">使用しません</span>。</p></div></div>
+        <div class="section"><h2><span class="num">5</span> デバイス要件</h2><p>ゲームを実行するにはAndroidデバイスが必要です。</p></div>
+        <div class="section"><h2><span class="num">6</span> データの共有</h2><div class="highlight-box"><div class="icon">🔒</div><p>Ludonessは個人データを<span class="tag tag-red">収集しない</span>ため、第三者とデータを<span class="tag tag-red">共有しません</span>。Google Play ゲームを通じて送信されるデータはGoogleの責任です。</p></div></div>
+        <div class="section"><h2><span class="num">7</span> 子供のプライバシー</h2><div class="highlight-box"><div class="icon">👶</div><p>アプリは個人データを<span class="tag tag-red">収集しない</span>ため、子供からもデータを<span class="tag tag-red">収集しません</span>。</p></div></div>
+        <div class="section"><h2><span class="num">8</span> セキュリティ</h2><p>アプリは個人情報を<span class="tag tag-yellow">要求せずに</span>動作するよう設計されています。</p><div class="highlight-box"><div class="icon">✅</div><p>ユーザーデータは<span class="tag tag-red">処理</span>も<span class="tag tag-red">保存</span>もされません。</p></div></div>
+        <div class="section"><h2><span class="num">9</span> ポリシーの変更</h2><p>このプライバシーポリシーは必要に応じて更新される場合があります。更新版はこのページに公開された日から有効になります。</p></div>
+        <div class="section"><h2><span class="num">10</span> お問い合わせ</h2><div class="contact-info"><span>メール: <a href="mailto:aleriyasamayt@gmail.com">aleriyasamayt@gmail.com</a></span><span>開発者: AleriyaSama</span></div></div>
     </div>
 
-    <div class="section">
-        <h2><span class="num">7</span> Çocukların Gizliliği</h2>
-        <div class="highlight-box">
-            <div class="icon">👶</div>
-            <p>Uygulama, kullanıcılardan kişisel veri <span class="tag tag-red">toplamadığı</span> için çocuklardan da ayrıca kişisel veri <span class="tag tag-red">toplamaz</span>.</p>
-        </div>
+    <!-- ══════════════════════════════ العربية ══════════════════════════════ -->
+    <div class="lang-content" id="lang-ar" dir="rtl" style="text-align:right;">
+        <div class="effective-date">تاريخ السريان: 26 مارس 2026</div>
+        <div class="intro"><strong>Ludoness - Kızma Birader</strong> تُقدّر خصوصيتك. لم يُصمَّم هذا اللعبة لجمع البيانات الشخصية من مستخدميها.</div>
+        <div class="section"><h2><span class="num">1</span> جمع البيانات</h2><p>لا تقوم Ludoness بما يلي: <span class="tag tag-red">جمع</span> أو <span class="tag tag-red">تخزين</span> أو <span class="tag tag-red">مشاركة</span>:</p><ul><li>الاسم الكامل</li><li>البريد الإلكتروني</li><li>رقم الهاتف</li><li>معلومات الدفع</li><li>وثائق الهوية</li><li>بيانات الموقع</li><li>معلومات الحساب الشخصي</li></ul><div class="highlight-box"><div class="icon">🚫</div><p><strong>لا يوجد نظام حسابات مستخدمين</strong> داخل التطبيق.</p></div></div>
+        <div class="section"><h2><span class="num">2</span> استخدام اللعبة</h2><p>تم تطوير Ludoness لتمكين المستخدمين من اللعب محليًا على أجهزتهم.</p><div class="highlight-box"><div class="icon">📴</div><p>تعمل اللعبة <span class="tag tag-green">دون إنترنت</span> في وظائفها الأساسية. قد تتطلب لوحة المتصدرين اتصالًا بالإنترنت.</p></div></div>
+        <div class="section"><h2><span class="num">3</span> خدمات Google Play للألعاب</h2><p>تستخدم Ludoness <span class="tag tag-blue">خدمات Google Play للألعاب</span> لميزة لوحة المتصدرين.</p><ul><li>يُعرض فقط <strong>الاسم المعروض</strong> في Google Play على لوحة المتصدرين.</li><li>هذه البيانات <span class="tag tag-red">لا تُخزَّن</span> على خوادم المطوّر.</li><li>تُرسَل النقاط فقط إلى بنية Google التحتية.</li></ul><div class="highlight-box blue"><div class="icon">ℹ️</div><p>سياسة خصوصية Google: <a href="https://policies.google.com/privacy" target="_blank" style="color:#74b9ff;">policies.google.com/privacy</a></p></div></div>
+        <div class="section"><h2><span class="num">4</span> الإعلانات والخدمات الخارجية</h2><div class="highlight-box"><div class="icon">🚫</div><p>لا تحتوي Ludoness على <span class="tag tag-red">إعلانات</span> ولا <span class="tag tag-red">تستخدم</span> خدمات إعلانية.</p></div></div>
+        <div class="section"><h2><span class="num">5</span> متطلبات الجهاز</h2><p>يلزم جهاز Android لتشغيل اللعبة.</p></div>
+        <div class="section"><h2><span class="num">6</span> مشاركة البيانات</h2><div class="highlight-box"><div class="icon">🔒</div><p>نظرًا لأن Ludoness لا <span class="tag tag-red">تجمع</span> بيانات شخصية، فهي لا <span class="tag tag-red">تشاركها</span> مع أطراف ثالثة. البيانات المُرسَلة عبر Google Play هي مسؤولية Google.</p></div></div>
+        <div class="section"><h2><span class="num">7</span> خصوصية الأطفال</h2><div class="highlight-box"><div class="icon">👶</div><p>نظرًا لأن التطبيق لا <span class="tag tag-red">يجمع</span> بيانات شخصية، فهو لا <span class="tag tag-red">يجمع</span> بيانات من الأطفال أيضًا.</p></div></div>
+        <div class="section"><h2><span class="num">8</span> الأمان</h2><p>تم تصميم التطبيق للعمل <span class="tag tag-yellow">دون طلب</span> أي معلومات شخصية.</p><div class="highlight-box"><div class="icon">✅</div><p>بيانات المستخدم لا <span class="tag tag-red">تُعالَج</span> ولا <span class="tag tag-red">تُخزَّن</span>.</p></div></div>
+        <div class="section"><h2><span class="num">9</span> تغييرات السياسة</h2><p>قد يتم تحديث سياسة الخصوصية هذه عند الضرورة. تسري النسخة المحدّثة من تاريخ نشرها في هذه الصفحة.</p></div>
+        <div class="section"><h2><span class="num">10</span> التواصل</h2><div class="contact-info"><span>البريد الإلكتروني: <a href="mailto:aleriyasamayt@gmail.com">aleriyasamayt@gmail.com</a></span><span>المطوّر: AleriyaSama</span></div></div>
     </div>
 
-    <div class="section">
-        <h2><span class="num">8</span> Güvenlik</h2>
-        <p>Uygulama, kullanıcıdan kişisel bilgi <span class="tag tag-yellow">talep etmeden</span> çalışacak şekilde tasarlanmıştır.</p>
-        <div class="highlight-box">
-            <div class="icon">✅</div>
-            <p>Kullanıcı verilerinin <span class="tag tag-red">işlenmesi</span> veya <span class="tag tag-red">saklanması</span> söz konusu değildir.</p>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2><span class="num">9</span> Politika Değişiklikleri</h2>
-        <p>Bu gizlilik politikası gerektiğinde güncellenebilir. Güncellenen sürüm bu sayfada yayımlandığı tarihten itibaren geçerli olur.</p>
-    </div>
-
-    <div class="section">
-        <h2><span class="num">10</span> İletişim</h2>
-        <p>Bu gizlilik politikasıyla ilgili sorularınız için bizimle aşağıdaki adresten iletişime geçebilirsiniz:</p>
-        <div class="contact-info">
-            <span>E-posta: <a href="mailto:aleriyasamayt@gmail.com">aleriyasamayt@gmail.com</a></span>
-            <span>Geliştirici: AleriyaSama</span>
-        </div>
-    </div>
 </div>
+
 <footer>
-    &copy; 2026 AleriyaSama &mdash; Ludoness - Kızma Birader. Tüm hakları saklıdır.
+    &copy; 2026 AleriyaSama &mdash; Ludoness - Kızma Birader.
 </footer>
+
+<script>
+    const subtitles = {
+        tr: 'Gizlilik Politikası',
+        en: 'Privacy Policy',
+        de: 'Datenschutzrichtlinie',
+        ru: 'Политика конфиденциальности',
+        es: 'Política de Privacidad',
+        ko: '개인정보 처리방침',
+        ja: 'プライバシーポリシー',
+        ar: 'سياسة الخصوصية'
+    };
+
+    function switchLang(lang) {
+        // Hide all
+        document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+        // Show selected
+        document.getElementById('lang-' + lang).classList.add('active');
+        document.querySelector('[onclick="switchLang(\'' + lang + '\')"]').classList.add('active');
+        // Update subtitle & html lang
+        document.getElementById('header-subtitle').textContent = subtitles[lang];
+        document.documentElement.lang = lang;
+        // RTL for Arabic
+        document.body.style.direction = lang === 'ar' ? 'rtl' : 'ltr';
+    }
+</script>
 </body>
 </html>
