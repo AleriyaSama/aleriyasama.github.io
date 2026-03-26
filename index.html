@@ -10,7 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
@@ -18,7 +17,6 @@
             min-height: 100vh;
             line-height: 1.7;
         }
-
         header {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -26,32 +24,27 @@
             padding: 30px 20px;
             text-align: center;
         }
-
         header h1 {
             font-size: 2rem;
             color: #e94560;
             margin-bottom: 6px;
             letter-spacing: 1px;
         }
-
         header .subtitle {
             font-size: 1.1rem;
             color: #a0a0b8;
         }
-
         .container {
             max-width: 820px;
             margin: 40px auto;
             padding: 0 24px 60px;
         }
-
         .effective-date {
             text-align: center;
             color: #a0a0b8;
             font-size: 0.95rem;
             margin-bottom: 32px;
         }
-
         .intro {
             background: rgba(233, 69, 96, 0.08);
             border-left: 4px solid #e94560;
@@ -60,7 +53,6 @@
             margin-bottom: 36px;
             font-size: 1.05rem;
         }
-
         .section {
             background: rgba(255, 255, 255, 0.04);
             border: 1px solid rgba(255, 255, 255, 0.07);
@@ -69,12 +61,10 @@
             margin-bottom: 22px;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-
         .section:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 30px rgba(233, 69, 96, 0.1);
         }
-
         .section h2 {
             color: #e94560;
             font-size: 1.25rem;
@@ -83,7 +73,6 @@
             align-items: center;
             gap: 10px;
         }
-
         .section h2 .num {
             background: #e94560;
             color: #fff;
@@ -97,23 +86,19 @@
             font-weight: 700;
             flex-shrink: 0;
         }
-
         .section p {
             color: #c0c0d0;
             margin-bottom: 12px;
         }
-
         .section ul {
             list-style: none;
             padding: 0;
         }
-
         .section ul li {
             padding: 6px 0 6px 28px;
             position: relative;
             color: #b0b0c4;
         }
-
         .section ul li::before {
             content: '';
             position: absolute;
@@ -125,7 +110,6 @@
             border-radius: 50%;
             opacity: 0.7;
         }
-
         footer {
             text-align: center;
             padding: 30px 20px;
@@ -133,36 +117,28 @@
             color: #6a6a80;
             font-size: 0.9rem;
         }
-
         footer a {
             color: #e94560;
             text-decoration: none;
         }
-
         footer a:hover {
             text-decoration: underline;
         }
-
         .contact-info {
             display: flex;
             flex-direction: column;
             gap: 8px;
         }
-
         .contact-info span {
             color: #c0c0d0;
         }
-
         .contact-info a {
             color: #e94560;
             text-decoration: none;
         }
-
         .contact-info a:hover {
             text-decoration: underline;
         }
-
-        /* Vurgulu etiketler */
         .tag {
             display: inline-block;
             padding: 3px 10px;
@@ -172,26 +148,26 @@
             letter-spacing: 0.4px;
             margin: 0 2px;
         }
-
         .tag-red {
             background: rgba(233, 69, 96, 0.18);
             color: #ff6b81;
             border: 1px solid rgba(233, 69, 96, 0.4);
         }
-
         .tag-green {
             background: rgba(46, 213, 115, 0.15);
             color: #2ed573;
             border: 1px solid rgba(46, 213, 115, 0.35);
         }
-
         .tag-yellow {
             background: rgba(255, 196, 9, 0.15);
             color: #ffd32a;
             border: 1px solid rgba(255, 196, 9, 0.35);
         }
-
-        /* Öne çıkan bilgi kutusu */
+        .tag-blue {
+            background: rgba(69, 160, 233, 0.18);
+            color: #74b9ff;
+            border: 1px solid rgba(69, 160, 233, 0.4);
+        }
         .highlight-box {
             display: flex;
             align-items: center;
@@ -202,27 +178,29 @@
             padding: 14px 18px;
             margin-top: 14px;
         }
-
         .highlight-box .icon {
             font-size: 1.6rem;
             flex-shrink: 0;
         }
-
         .highlight-box p {
             margin: 0;
             color: #a8f0c6;
             font-size: 0.97rem;
         }
-
+        .highlight-box.blue {
+            background: rgba(69, 160, 233, 0.07);
+            border: 1px solid rgba(69, 160, 233, 0.25);
+        }
+        .highlight-box.blue p {
+            color: #a8d8f0;
+        }
         @media (max-width: 600px) {
             header h1 {
                 font-size: 1.5rem;
             }
-
             .container {
                 padding: 0 16px 40px;
             }
-
             .section {
                 padding: 20px 18px;
             }
@@ -230,18 +208,14 @@
     </style>
 </head>
 <body>
-
 <header>
     <h1>Ludoness - Kızma Birader</h1>
     <div class="subtitle">Gizlilik Politikası</div>
 </header>
-
 <div class="container">
-
     <div class="effective-date">
-        Yürürlük Tarihi: 19 Mart 2026, Çarşamba
+        Yürürlük Tarihi: 26 Mart 2026, Perşembe
     </div>
-
     <div class="intro">
         <strong>Ludoness - Kızma Birader</strong> olarak kullanıcı gizliliğine önem veriyoruz. Bu oyun, kullanıcılarından kişisel veri toplamak amacıyla tasarlanmamıştır.
     </div>
@@ -269,12 +243,26 @@
         <p>Ludoness - Kızma Birader, kullanıcıların oyunu cihazlarında yerel olarak oynayabilmesi için geliştirilmiştir.</p>
         <div class="highlight-box">
             <div class="icon">📴</div>
-            <p>Oyun, temel işlevleri bakımından <span class="tag tag-green">offline çalışır</span> ve <span class="tag tag-red">internet bağlantısı gerektirmez</span>.</p>
+            <p>Oyun, temel işlevleri bakımından <span class="tag tag-green">offline çalışır</span>. Sıralama tablosu (leaderboard) özelliği için internet bağlantısı gerekebilir.</p>
         </div>
     </div>
 
     <div class="section">
-        <h2><span class="num">3</span> Reklam ve Üçüncü Taraf Hizmetleri</h2>
+        <h2><span class="num">3</span> Google Play Games Services</h2>
+        <p>Ludoness - Kızma Birader, sıralama tablosu (leaderboard) özelliği için <span class="tag tag-blue">Google Play Games Services</span> altyapısını kullanmaktadır.</p>
+        <ul>
+            <li>Sıralama tablosunda yalnızca oyuncunun Google Play hesabına bağlı <strong>görünen adı</strong> (nickname) gösterilir.</li>
+            <li>Bu görünen ad, kullanıcı tarafından Google Play üzerinden belirlenmiştir ve geliştiriciye ait sunucularda <span class="tag tag-red">saklanmaz</span>.</li>
+            <li>Oyun skorları yalnızca Google'ın altyapısına iletilir; geliştirici bu verilere erişemez, işleyemez veya saklayamaz.</li>
+        </ul>
+        <div class="highlight-box blue">
+            <div class="icon">ℹ️</div>
+            <p>Google Play Games Services kullanımına ilişkin gizlilik bilgileri için Google'ın gizlilik politikasını inceleyebilirsiniz: <a href="https://policies.google.com/privacy" target="_blank" style="color:#74b9ff;">policies.google.com/privacy</a></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="num">4</span> Reklam ve Diğer Üçüncü Taraf Hizmetleri</h2>
         <div class="highlight-box">
             <div class="icon">🚫</div>
             <p>Ludoness - Kızma Birader içerisinde <span class="tag tag-red">reklam gösterimi bulunmamaktadır</span>. Uygulama, kullanıcıların kişisel verilerini toplamak veya işlemek amacıyla reklam hizmetleri <span class="tag tag-red">kullanmaz</span>.</p>
@@ -282,20 +270,20 @@
     </div>
 
     <div class="section">
-        <h2><span class="num">4</span> Cihaz Gereksinimi</h2>
+        <h2><span class="num">5</span> Cihaz Gereksinimi</h2>
         <p>Oyunun çalıştırılabilmesi için bir Android sürümüne sahip cihaz veya uyumlu bir Android emülatörü gereklidir. Bu gereksinim yalnızca oyunun teknik olarak çalıştırılabilmesi içindir.</p>
     </div>
 
     <div class="section">
-        <h2><span class="num">5</span> Veri Paylaşımı</h2>
+        <h2><span class="num">6</span> Veri Paylaşımı</h2>
         <div class="highlight-box">
             <div class="icon">🔒</div>
-            <p>Ludoness - Kızma Birader, kullanıcıya ait herhangi bir kişisel veriyi <span class="tag tag-red">toplamadığı</span> için üçüncü taraflarla veri paylaşımı <span class="tag tag-red">yapmaz</span>.</p>
+            <p>Ludoness - Kızma Birader, kullanıcıya ait herhangi bir kişisel veriyi <span class="tag tag-red">toplamadığı</span> için üçüncü taraflarla veri paylaşımı <span class="tag tag-red">yapmaz</span>. Google Play Games Services aracılığıyla iletilen veriler yalnızca Google'ın sorumluluğu altındadır.</p>
         </div>
     </div>
 
     <div class="section">
-        <h2><span class="num">6</span> Çocukların Gizliliği</h2>
+        <h2><span class="num">7</span> Çocukların Gizliliği</h2>
         <div class="highlight-box">
             <div class="icon">👶</div>
             <p>Uygulama, kullanıcılardan kişisel veri <span class="tag tag-red">toplamadığı</span> için çocuklardan da ayrıca kişisel veri <span class="tag tag-red">toplamaz</span>.</p>
@@ -303,7 +291,7 @@
     </div>
 
     <div class="section">
-        <h2><span class="num">7</span> Güvenlik</h2>
+        <h2><span class="num">8</span> Güvenlik</h2>
         <p>Uygulama, kullanıcıdan kişisel bilgi <span class="tag tag-yellow">talep etmeden</span> çalışacak şekilde tasarlanmıştır.</p>
         <div class="highlight-box">
             <div class="icon">✅</div>
@@ -312,24 +300,21 @@
     </div>
 
     <div class="section">
-        <h2><span class="num">8</span> Politika Değişiklikleri</h2>
+        <h2><span class="num">9</span> Politika Değişiklikleri</h2>
         <p>Bu gizlilik politikası gerektiğinde güncellenebilir. Güncellenen sürüm bu sayfada yayımlandığı tarihten itibaren geçerli olur.</p>
     </div>
 
     <div class="section">
-        <h2><span class="num">9</span> İletişim</h2>
+        <h2><span class="num">10</span> İletişim</h2>
         <p>Bu gizlilik politikasıyla ilgili sorularınız için bizimle aşağıdaki adresten iletişime geçebilirsiniz:</p>
         <div class="contact-info">
             <span>E-posta: <a href="mailto:aleriyasamayt@gmail.com">aleriyasamayt@gmail.com</a></span>
             <span>Geliştirici: AleriyaSama</span>
         </div>
     </div>
-
 </div>
-
 <footer>
     &copy; 2026 AleriyaSama &mdash; Ludoness - Kızma Birader. Tüm hakları saklıdır.
 </footer>
-
 </body>
 </html>
